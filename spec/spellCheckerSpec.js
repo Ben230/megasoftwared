@@ -2,16 +2,22 @@ const spellCheckerModule = require('../src/spellChecker.js');
 const SpellChecker = spellCheckerModule.SpellChecker;
 
 describe('SpellChecker', function() {
-  it('returns empty string for empty string input', function() {
-    var newSpellChecker = new SpellChecker;
+  var newSpellChecker;
 
+  beforeEach(function() {
+    newSpellChecker = new SpellChecker;
+  });
+
+  it('returns empty string for empty string input', function() {
     expect(newSpellChecker.compute("")).toEqual("");
   });
 
   it('returns a for "a" input', function() {
-    var newSpellChecker = new SpellChecker;
-
     expect(newSpellChecker.compute("a")).toEqual("a");
   });
-  
+
+  it('returns ~b~ for "b" input', function() {
+    expect(newSpellChecker.compute("b")).toEqual("~b~");
+  });
+
 });

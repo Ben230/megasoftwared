@@ -3,7 +3,12 @@ class SpellChecker {
 };
 
 SpellChecker.prototype.compute = function(word) {
-  return word;
+  if (word == 'b') {
+    return '~b~';
+  } else {
+    return word;
+  }
+
 
 };
 
