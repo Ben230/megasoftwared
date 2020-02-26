@@ -1,0 +1,22 @@
+{
+  "name": "review4",
+  "version": "1.0.0",
+  "description": "Megasoftwared wordprocessor - spellchecker",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben230/megasoftwared.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ben230/megasoftwared/issues"
+  },
+  "homepage": "https://github.com/Ben230/megasoftwared#readme",
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
+  }
+}
