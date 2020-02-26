@@ -12,5 +12,6 @@ describe('SpellChecker', function() {
     var newSpellChecker = new SpellChecker;
 
     expect(newSpellChecker.compute("a")).toEqual("a");
-  })
+  });
+  
 });
