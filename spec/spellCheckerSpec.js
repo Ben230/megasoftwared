@@ -7,4 +7,10 @@ describe('SpellChecker', function() {
 
     expect(newSpellChecker.compute("")).toEqual("");
   });
+
+  it('returns a for "a" input', function() {
+    var newSpellChecker = new SpellChecker;
+
+    expect(newSpellChecker.compute("a")).toEqual("a");
+  })
 });
