@@ -12,12 +12,16 @@ describe('SpellChecker', function() {
     expect(newSpellChecker.compute("")).toEqual("");
   });
 
-  it('returns a for "a" input', function() {
+  it('returns "a" for "a" input', function() {
     expect(newSpellChecker.compute("a")).toEqual("a");
   });
 
-  it('returns ~b~ for "b" input', function() {
+  it('returns "~b~" for "b" input', function() {
     expect(newSpellChecker.compute("b")).toEqual("~b~");
+  });
+
+  it('returns "~helo~ world" for "helo world" input', function() {
+    expect(newSpellChecker.compute("helo world")).toEqual("~helo~ world");
   });
 
 });
